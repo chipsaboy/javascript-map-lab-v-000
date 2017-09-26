@@ -30,3 +30,12 @@ var sortedRobots = robots.map(function(robot) {
     return Object.assign({}, robot, { alliance: 'autobot' });
   }
 });
+
+var coloredZebraStripes = zebraStripes.map(function(stripe, index) {
+  if (index % 2 === 0) {
+    return Object.assign({}, stripe, { color: 'black'});
+  }
+  else {
+    return Object.assign({}, stripe, { color: 'white'});
+  }
+});
